@@ -1,0 +1,39 @@
+import java.util.*;
+
+public class pattern {
+    public static void main(String args[]) {
+        int rows = 5;
+        int cols = 6;
+
+        // Outer loop for rows
+        for (int i = 1; i <= rows; i++) {
+            // Inner loop for columns
+            for (int j = 1; j <= cols; j++) {
+                if (i == 1 || j == 1 || i == rows || j == cols) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+
+        // Call the second pattern method
+        inverted_rotated(8);
+    }
+
+    public static void inverted_rotated(int n) {
+        // Outer loop
+        for (int i = 1; i <= n; i++) {
+            // Spaces
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+            // Stars
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
