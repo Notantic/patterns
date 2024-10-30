@@ -1,4 +1,8 @@
- public static void butterfly(int n) {
+
+public class Butterfly {
+    public static void main(String[] args) {
+        int n = 5 ; 
+      
         // 1st half
         for (int i = 1; i <= n; i++) {
             // Stars - i
