@@ -1,0 +1,11 @@
+ public static void rotated(int n) {
+        for (int i = 1; i <= n; i++) { // Outer loop
+            for (int j = 1; j <= n - i; j++) { // For spaces
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) { // For stars
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
